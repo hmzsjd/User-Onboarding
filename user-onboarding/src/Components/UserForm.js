@@ -26,14 +26,14 @@ export default function FriendForm(props) {
         <h2>Add a User</h2>
 
         {/* initial disable */}
-        <button disabled={disabled}>submit</button>
+        <button id='submit' disabled={disabled}>submit</button>
 
         <div >
-          <div>{errors.first_name}</div>
-          <div>{errors.last_name}</div>
-          <div>{errors.email}</div>
-          <div>{errors.password}</div>
-          <div>{errors.agreed}</div>
+          <div id="fNameError">{errors.first_name}</div>
+          <div id="lNameError">{errors.last_name}</div>
+          <div id="emailError">{errors.email}</div>
+          <div id="passError">{errors.password}</div>
+          <div id="tosError">{errors.agreed}</div>
         </div>
       </div>
 
